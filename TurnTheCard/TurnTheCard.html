@@ -7,12 +7,15 @@
     <title>GIra la carta</title>
 </head>
 <body>
-    <img src="ronaldo-carta-fronte-mondiali.webp" onclick="gira()" />
-
+    <img src="carta-retro-mondiali.jpg" onclick="gira()" width="500" height="650" /> 
+     
     <script>
          let carta=document.querySelector("img")
         function gira() {
-         carta.src="carta-retro-mondiali.jpg"
+            if (carta.src.includes('retro'))
+         carta.src ="ronaldo-carta-fronte-mondiali.webp"
+         else 
+         carta.src = "carta-retro-mondiali.jpg"
         }
     </script>
 </body>
