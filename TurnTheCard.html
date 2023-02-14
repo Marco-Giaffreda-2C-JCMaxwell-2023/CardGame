@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIra la carta</title>
+</head>
+
+<body>
+    <img id="carta1" src="carta-retro-mondiali.jpg" onclick="gira1()" width="500" height="650" />
+    <img id="carta2" src="carta-retro-mondiali.jpg" onclick="gira2()" width="500" height="650" />
+
+    <script>
+        let carta1 = document.querySelector("#carta1")
+        let carta2 = document.querySelector("#carta2")
+        function gira1() {
+            if (carta1.src.includes('retro'))
+                carta1.src = "ronaldo-carta-fronte-mondiali.webp"
+            else
+                carta1.src = "carta-retro-mondiali.jpg"
+        }
+        function gira2() {
+            if (carta2.src.includes('retro'))
+                carta2.src = "neymar-fronte-figurina.png"
+            else
+                carta2.src = "carta-retro-mondiali.jpg"
+        }
+    </script>
+</body>
+
+</html>
